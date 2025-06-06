@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
-import type { FormEvent, ChangeEvent, KeyboardEvent } from 'react';
+import type { FormEvent, KeyboardEvent } from 'react';
 
 const VerificationPage = () => {
   const [digits, setDigits] = useState<string[]>(['', '', '', '', '', '']);
-  const [email, setEmail] = useState('user@example.com'); // Pre-filled with example or from props
+  const email = 'user@example.com'; // Pre-filled with example or from props
   const inputRefs = useRef<HTMLInputElement[]>([]);
   const [isResending, setIsResending] = useState(false);
   const [countdown, setCountdown] = useState(30);

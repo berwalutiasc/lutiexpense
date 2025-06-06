@@ -3,6 +3,7 @@ import LandingPage from './pages/landing-page'
 import LoginPage from './pages/login-page'
 import SignupPage from './pages/register-page'
 import VerificationPage from './pages/verification-page'
+import DashboardPage from './pages/dashboard-page'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/verification" element={<VerificationPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </BrowserRouter>
   )
