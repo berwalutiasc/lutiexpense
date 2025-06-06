@@ -14,14 +14,21 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "allowJs": true,
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Module Resolution */
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/types/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src/**/*", "src/types/*.d.ts"]
 }
